@@ -1,0 +1,193 @@
+.appinfo {
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar-cstm {
+  background-color: #0a1b2e !important;
+  color: white;
+}
+.logoname {
+  font-size: 17px;
+  margin: 0px !important;
+}
+.logoname span {
+  font-weight: 500;
+  padding: 2px 7px;
+  border-radius: 5px;
+  margin-left: 3px;
+  background-color: white;
+  color: black;
+}
+.dropdown-toggle::after {
+  margin-left: 1em !important;
+}
+.searchcontainer {
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  padding: 5px;
+  border: 1.6px solid #aaabab !important;
+}
+.seachbox {
+  background-color: transparent;
+  border: none !important;
+  outline: none !important;
+  color: white;
+  margin-left: 5px;
+  padding: 0px 5px;
+}
+.seachbox::placeholder {
+  color: #aaabab !important;
+}
+.userinfo {
+  flex-grow: unset !important;
+}
+.userimg {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, #d9d9d9 0%, #d9d9d9 100%);
+  border-radius: 100px;
+  object-fit: cover;
+}
+.nav-link {
+  color: white;
+}
+.nav-link:hover {
+  color: white;
+}
+nav .nav-link.show {
+  color: white !important;
+}
+.dropdown-menu[data-bs-popper] {
+  left: -50px !important;
+}
+.userinfo {
+  margin-right: 20px;
+  width: 230px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.notification_box {
+  position: relative;
+}
+.bellicon {
+  font-size: 24px;
+}
+.count {
+  background-color: red;
+  width: 15px;
+  height: 15px;
+  display: flex;
+  align-items: center;
+  border-radius: 50px;
+  justify-content: center;
+  position: absolute;
+  left: 13px;
+}
+.count p {
+  font-size: 10px;
+  padding: 0px !important;
+  margin: 0px !important;
+}
+.navbar-nav {
+  flex-direction: row !important;
+}
+
+.nav_option_container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  cursor: pointer;
+}
+.user_name {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.user_name p {
+  font-size: 14px;
+  margin: 0px 5px !important;
+  text-transform: capitalize;
+}
+.navbar_option {
+  position: absolute;
+  color: black;
+  right: 0px;
+  margin: 10px;
+  top: 40px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: none;
+}
+.navbar_option.show {
+  display: block;
+}
+.navbar_option ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0px !important;
+}
+
+.navbar_option ul li {
+  display: flex;
+  padding: 5px 40px;
+}
+.option_link p {
+  margin: 0px !important;
+}
+.option_icon {
+  margin-right: 10px;
+}
+
+.updowmicon {
+  font-size: 14px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .appinfo {
+    width: 250px;
+  }
+
+  .user_name .updowmicon,
+  .user_name > p {
+    display: none;
+  }
+  .userinfo {
+    width: 85px;
+  }
+  .logoname {
+    font-size: 15px;
+  }
+  .searchcontainer {
+    width: 140px;
+  }
+  .seachbox {
+    width: 100%;
+  }
+  .userinfo {
+    margin: 0px;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .appinfo {
+    width: 340px;
+  }
+  .userinfo {
+    width: 90px;
+  }
+  .user_name .updowmicon,
+  .user_name > p {
+    display: none;
+  }
+  .navbar-nav {
+    flex-direction: row !important;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+}

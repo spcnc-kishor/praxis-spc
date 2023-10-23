@@ -21,7 +21,7 @@ import { useState } from "react";
 function TopNavbar() {
   const [isDropdownOption, setisDropdownOption] = useState(true);
   return (
-    <Navbar expand="lg" className="bg-body-tertiary navbar-cstm">
+    <Navbar expand="lg" className="bg-body-tertiary navbar-cstm" >
       <Container fluid>
         <div className="appinfo">
           <div className="logo">

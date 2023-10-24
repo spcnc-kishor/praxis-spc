@@ -1,0 +1,25 @@
+.page_tabs {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 0px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.071);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.page_tab {
+  border-radius: 5px;
+  text-align: center;
+  font-weight: 500;
+}
+.page_tab a {
+  color: black;
+  text-decoration: none;
+}
+.page_tab a p {
+  padding: 10px;
+}
+.page_tab.active,
+.page_tab:hover {
+  background-color: #e6def0;
+  color: black;
+}

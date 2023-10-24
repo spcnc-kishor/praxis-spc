@@ -2,4 +2,29 @@
   margin: 0px;
   padding: 0px;
 }
+p {
+  margin: 0px;
+  padding: 0px;
+}
 
+.App {
+  background-color: var(--primary_color);
+}
+
+main {
+  position: absolute;
+}
+
+section {
+  background-color: var(--white_color);
+  border-radius: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  height: 100%;
+  overflow: hidden;
+  /* padding: 20px; */
+}
+
+.row > * {
+  padding: 0px;
+}

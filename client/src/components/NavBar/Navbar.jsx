@@ -1,13 +1,6 @@
 import React from "react";
 import "./NavbarStyle.css";
-import {
-  Button,
-  Container,
-  Form,
-  Nav,
-  Navbar,
-  NavDropdown,
-} from "react-bootstrap";
+import { Container, Nav, Navbar } from "react-bootstrap";
 import navbar_user from "../../assets/images/navbar_user.png";
 import {
   BsSearch,
@@ -21,7 +14,7 @@ import { useState } from "react";
 function TopNavbar() {
   const [isDropdownOption, setisDropdownOption] = useState(true);
   return (
-    <Navbar expand="lg" className="bg-body-tertiary navbar-cstm" >
+    <Navbar expand="lg" className="bg-body-tertiary navbar-cstm">
       <Container fluid>
         <div className="appinfo">
           <div className="logo">
@@ -47,7 +40,7 @@ function TopNavbar() {
               onClick={() => setisDropdownOption(!isDropdownOption)}
             >
               <div style={{ width: "40px", height: "40px" }}>
-                <img src={navbar_user} className="userimg" />
+                <img src={navbar_user} className="userimg" alt="userimg"/>
               </div>
               <div className="user_name">
                 <p>Kishor Gupta</p>
@@ -57,7 +50,9 @@ function TopNavbar() {
                   <BsFillCaretUpFill className="updowmicon" />
                 )}
                 <div
-                  className={`navbar_option  ${!isDropdownOption ? "show" : ""}`}
+                  className={`navbar_option  ${
+                    !isDropdownOption ? "show" : ""
+                  }`}
                 >
                   <ul>
                     <li>

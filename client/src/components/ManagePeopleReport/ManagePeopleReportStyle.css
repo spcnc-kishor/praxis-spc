@@ -1,0 +1,42 @@
+.report_container {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .count_report {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: end;
+    justify-content: center;
+  }
+  .count_report ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0px;
+    margin: 10px 0px;
+  }
+  .count_report ul li {
+    font-size: 13px;
+    font-weight: 500;
+  }
+  .count_cost_box {
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--primary_color);
+    color: var(--white_color);
+  }
+  .summary {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #edfffe;
+  }

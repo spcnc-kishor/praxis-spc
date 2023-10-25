@@ -1,0 +1,26 @@
+.page_tag {
+    display: flex;
+    align-items: center;
+  }
+  .tag_name {
+    position: relative;
+    padding: 5px 0px;
+  }
+  .tag_name::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 2px;
+    background-color: var(--secondary_color);
+  }
+  .tag_name p {
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 22px;
+  }
+  .arrowicon {
+    font-size: 22px;
+    color: var(--secondary_color);
+  }
+  

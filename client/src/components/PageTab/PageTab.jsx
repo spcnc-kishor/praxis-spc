@@ -7,7 +7,7 @@ export default function PageTab({ tabs, activetab }) {
     <div className="page_tabs">
       {tabs?.map((tab, index) => (
         <div
-          className={`page_tab  ${activetab == index ? "active" : null}`}
+          className={`page_tab  ${activetab === index ? "active" : null}`}
           key={index}
         >
           <Link to={tab.path}>

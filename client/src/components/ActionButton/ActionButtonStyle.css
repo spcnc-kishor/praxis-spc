@@ -1,0 +1,27 @@
+.action_button_box {
+  display: flex;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 3px;
+}
+.action_button button {
+  border: none;
+  border-radius: 0%;
+  font-weight: 600;
+  background-color: var(--secondary_color);
+  padding: 8px 15px;
+}
+.action_button button:hover {
+  background-color: var(--secondary_color);
+}
+.other_action {
+  border-left: 2px solid var(--white_color);
+  background-color: var(--secondary_color);
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+.downicon {
+  font-size: 20px;
+  color: var(--white_color);
+}

@@ -1,0 +1,41 @@
+.remuneration {
+  border: 0.3px rgb(104, 100, 100) solid;
+  border-radius: 10px;
+  background-color: #f8f8f8;
+  margin: 20px 0px;
+}
+.tag {
+  display: flex;
+  padding: 10px 25px;
+  border-bottom: 1px solid grey;
+}
+.tag .edit_button {
+  margin-left: 20px;
+}
+.tag p {
+  color: #31899d;
+  font-size: 20;
+  font-weight: 700;
+}
+.remuneration .content,
+.remuneration .half {
+  display: flex;
+  justify-content: space-between;
+}
+.content {
+  padding: 10px 25px;
+}
+.half {
+  flex-direction: column;
+  width: 50%;
+}
+.qtr {
+  /* border: 1px solid yellow; */
+  margin: 20px 5px;
+}
+.qtr p {
+  font-size: 15px;
+}
+.qtr .dark {
+  font-weight: 600;
+}

@@ -4,8 +4,10 @@ import { Container } from "react-bootstrap";
 import PageTab from "../../components/PageTab/PageTab";
 import PageTag from "../../components/PageTag/PageTag";
 import ActionButton from "../../components/ActionButton/ActionButton";
-import ManagePeopleFilter from "../../components/ManagePeopleFilter/ManagePeopleFilter";
-import ManagePeopleReport from "../../components/ManagePeopleReport/ManagePeopleReport";
+import ManagePeopleFilter from "../../components/MPFilter/ManagePeopleFilter";
+import ManagePeopleReport from "../../components/MPReport/ManagePeopleReport";
+import PersonCard from "../../components/PersonCard/PersonCard";
+import ManagePeopleRemuneration from "../../components/MPRemuneration/ManagePeopleRemuneration";
 
 const ManagePeopleTab = [
   { tabname: "Analytics Dashboard", path: "/" },
@@ -24,8 +26,18 @@ export default function ManagePeople() {
           <ActionButton />
         </div>
         <ManagePeopleFilter />
-
         <ManagePeopleReport />
+
+        <div className="people_cards">
+          <PersonCard />
+          <PersonCard />
+          <PersonCard />
+        </div>
+
+        <ManagePeopleRemuneration />
+
+
+        
       </Container>
     </div>
   );

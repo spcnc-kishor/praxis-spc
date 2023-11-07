@@ -1,0 +1,247 @@
+.auth_screen {
+  background-image: url("../../assets/images/auth_bg_img.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 20px 60px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.meta_info,
+.auth_content {
+  min-height: 80vh;
+  width: 45%;
+  display: flex;
+}
+.auth_content {
+  background-color: white;
+  flex-direction: column;
+  padding: 70px 50px;
+  border-radius: 10px;
+  position: relative;
+  z-index: 99999;
+}
+.input_container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+.input_section {
+  display: flex;
+  border-bottom: 2px solid grey;
+}
+.input_label p {
+  font-weight: 500;
+  font-size: 20px;
+}
+.input_section input {
+  width: 100%;
+  padding: 0px 10px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.input_section .meta_icon {
+  padding: 10px;
+}
+.input_section .meta_icon .icon {
+  font-size: 25px;
+}
+.content_header {
+  position: relative;
+  margin-bottom: 30px;
+}
+.content_header::before {
+  content: "";
+  position: absolute;
+  width: 10%;
+  height: 5px;
+  background-color: #184d8a;
+  bottom: -2px;
+  border-radius: 10px;
+}
+.content_header h4 {
+  font-size: 40px;
+  color: #184d8a;
+  margin-bottom: 18px;
+}
+.forgot_pswd {
+  text-align: center;
+}
+.forgot_pswrd_link {
+  color: black;
+  font-weight: 600;
+  font-size: 16px;
+}
+.authBtn {
+  margin: 30px 0px;
+  display: flex;
+  border-radius: 50px;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(24, 77, 138, 1);
+  overflow: hidden;
+  padding: 10px;
+}
+.authBtn button {
+  width: 100%;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: white;
+  font-weight: 400;
+  font-size: 22px;
+}
+.term_cond {
+  text-align: center;
+}
+.term_cond p {
+  font-size: 16px;
+}
+.trm_cond_link {
+  color: black;
+}
+.meta_info {
+  background-color: transparent;
+  color: white;
+  justify-content: space-between;
+}
+.heading_container {
+  text-align: start;
+  margin: 10px 0px;
+}
+.heading_container h1 {
+  font-weight: 400;
+  font-size: 45px;
+}
+.meta_info .meta_details {
+  padding: 0px;
+  margin: 0px;
+  text-align: start;
+}
+.meta_info .meta_details p {
+  font-size: 18px;
+  font-weight: 400;
+}
+.trail_btn {
+  display: flex;
+  margin: 20px 0px;
+}
+.trail_btn p {
+  display: inline;
+  background: linear-gradient(
+    90deg,
+    rgba(118, 133, 241, 1) 0%,
+    rgba(3, 203, 254, 1) 98%
+  );
+  padding: 15px 30px;
+  font-weight: 600;
+  font-size: 20px;
+  border-radius: 50px;
+}
+.logoname {
+  font-size: 23px;
+  margin: 0px !important;
+  display: flex;
+  align-self: flex-start;
+}
+.logoname span {
+  font-weight: 500;
+  padding: 2px 7px;
+  border-radius: 5px;
+  margin-left: 10px;
+  background-color: var(--white_color);
+  color: var(--primary_color);
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .heading_container h1 {
+    font-size: 30px;
+  }
+  .meta_info .meta_details p {
+    font-size: 12px;
+  }
+  .input_section .meta_icon {
+    padding: 3px;
+  }
+  .input_container {
+    margin-bottom: 20px;
+  }
+  .auth_content {
+    padding: 20px 30px;
+  }
+  .content_header h4 {
+    font-size: 30px;
+  }
+  .input_label p {
+    font-size: 16px;
+  }
+  .input_section .meta_icon .icon {
+    font-size: 16px;
+  }
+  .forgot_pswrd_link {
+    font-size: 13px;
+  }
+  .authBtn {
+    margin: 20px 0px;
+    padding: 5px;
+  }
+  .authBtn button {
+    font-size: 19px;
+  }
+  .term_cond p {
+    font-size: 13px;
+  }
+  .term_cond p {
+    font-size: 13px;
+  }
+  .trail_btn p {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .heading_container h1 {
+    font-size: 40px;
+  }
+  .meta_info .meta_details p {
+    font-size: 15px;
+  }
+  .auth_content {
+    padding: 20px 30px;
+  }
+  .content_header h4 {
+    font-size: 30px;
+  }
+  .input_label p {
+    font-size: 16px;
+  }
+  .input_section .meta_icon .icon {
+    font-size: 16px;
+  }
+  .forgot_pswrd_link {
+    font-size: 13px;
+  }
+  .authBtn {
+    margin: 20px 0px;
+    padding: 5px;
+  }
+  .authBtn button {
+    font-size: 19px;
+  }
+  .term_cond p {
+    font-size: 13px;
+  }
+  .term_cond p {
+    font-size: 13px;
+  }
+  .trail_btn p {
+    padding: 10px 15px;
+    font-size: 20px;
+  }
+}

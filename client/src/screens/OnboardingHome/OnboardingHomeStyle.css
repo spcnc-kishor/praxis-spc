@@ -1,0 +1,13 @@
+.onboarding_home {
+  display: flex;
+  background-color: var(--primary_color);
+}
+.container_wrapper {
+  width: 80%;
+  background-color: white;
+  margin: 10px;
+  margin-top: 30px;
+  border-radius: 10px;
+  padding: 20px;
+
+}

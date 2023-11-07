@@ -8,6 +8,7 @@ import ManagePeopleFilter from "../../components/MPFilter/ManagePeopleFilter";
 import ManagePeopleReport from "../../components/MPReport/ManagePeopleReport";
 import PersonCard from "../../components/PersonCard/PersonCard";
 import ManagePeopleRemuneration from "../../components/MPRemuneration/ManagePeopleRemuneration";
+import DocPreview from "../../components/DocPreview/DocPreview";
 
 const ManagePeopleTab = [
   { tabname: "Analytics Dashboard", path: "/" },
@@ -36,8 +37,23 @@ export default function ManagePeople() {
 
         <ManagePeopleRemuneration />
 
+        <div className="remuneration people_document">
+          <div className="tag">
+            <p>Documents</p>
+          </div>
+          <div className="content">
+            <DocPreview
+              doctype="CV"
+              metainfo="Personal DOC"
+              preview="url will come here or ref of doc"
+            />
 
-        
+            <div className="add_new_doc">
+
+              
+            </div>
+          </div>
+        </div>
       </Container>
     </div>
   );

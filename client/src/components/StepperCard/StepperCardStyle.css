@@ -1,0 +1,19 @@
+.stepper_tag {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  align-items: center;
+}
+.stepper_tag .uncheck {
+  color: grey;
+}
+.stepper_tag .check {
+  color: yellow;
+}
+.stepper_tag .check_icon {
+  padding: 5px;
+}
+.stepper_tag p {
+  font-size: 15px;
+  font-weight: 400;
+}

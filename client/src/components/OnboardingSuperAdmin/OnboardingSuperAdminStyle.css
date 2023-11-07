@@ -1,0 +1,166 @@
+.onboarding_tag {
+  position: relative;
+  margin: 10px 0px;
+}
+.onboarding_tag::after {
+  content: "";
+  position: absolute;
+  width: 60%;
+  height: 2px;
+  background-color: rgba(24, 77, 138, 1);
+  bottom: -5px;
+}
+.onboarding_tag p {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 24px;
+  color: #0a1b2e;
+  text-align: left;
+}
+.account_setup {
+  width: 80%;
+}
+.account_setup_meta_info {
+  position: relative;
+  margin: 30px 0px;
+}
+.account_setup_meta_info .meta_info_tag p {
+  text-transform: capitalize;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 18px;
+  color: #184d8a;
+  text-align: left;
+}
+.account_setup_meta_info .meta_info_desc p {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  letter-spacing: 0.39px;
+  color: #000000a6;
+  text-align: left;
+  line-height: 20px;
+}
+.genral_info {
+  display: flex;
+  justify-content: space-between;
+}
+.inputs {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+.inputs .input_container {
+  width: 100%;
+}
+.inputs .input_container .label {
+  margin-bottom: 5px;
+}
+.inputs .input_container .label p {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 15px;
+  color: #666666b6;
+  text-align: left;
+}
+.input_box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.input_box .input_tag {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #666666b6;
+  border-radius: 5px;
+  padding: 0px 10px;
+  outline: none;
+}
+.info_icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+.info_icon .icon {
+  font-size: 20px;
+  color: var(--primary_color);
+}
+.company_logo {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.add_logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: dashed;
+  border-color: #666666b6;
+  width: 200px;
+  height: 200px;
+  color: #666666b6;
+}
+.add_logo .logo {
+  font-size: 25px;
+}
+.add_logo p {
+  font-size: 15px;
+}
+
+.id_genrate {
+  flex-direction: column;
+}
+
+.name_inputs {
+  width: 100%;
+  display: flex;
+  display: flex;
+  justify-content: space-between;
+}
+
+.name_inputs .input_container {
+  width: 47%;
+}
+.contact_number {
+  width: 100%;
+}
+.contact_number .input_box select {
+  height: 100%;
+  width: 20%;
+  border: none;
+  outline: none;
+  border-right: 2px solid #666666b6;
+}
+.contact_number .input_box input {
+  border: none;
+  outline: none;
+  flex: 1;
+  height: 100%;
+}
+
+.onboarding_term {
+  text-align: start;
+}
+.proceed_btn{
+  margin: 15px 0px;
+}
+.proceed_btn button {
+  border-width: 0px;
+  width: 460px;
+  height: 50px;
+  background: inherit;
+  background-color: rgba(24, 77, 138, 1);
+  border: none;
+  border-radius: 295px;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 18px;
+  color: white;
+}

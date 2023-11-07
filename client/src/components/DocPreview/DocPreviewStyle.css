@@ -1,0 +1,41 @@
+.people_document .content {
+  justify-content: flex-start !important;
+}
+.doc_preview_card {
+  overflow: hidden;
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px;
+  width: 12%;
+  margin: 10px;
+  flex-direction: column;
+}
+.preview {
+  height: 65%;
+}
+.meta_info {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 35%;
+  background-color: var(--white_color);
+}
+.meta_info h4 {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0px;
+  text-transform: uppercase;
+}
+.doc_type {
+  padding: 2px 4px;
+  margin-top: 5px;
+}
+.doc_type p {
+  border-radius: 10px;
+  background-color: #d7d7d7;
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: capitalize;
+}

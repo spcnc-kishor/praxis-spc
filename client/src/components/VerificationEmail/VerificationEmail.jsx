@@ -1,7 +1,6 @@
 import React from "react";
 import "./VerificationEmailStyle.css";
 import { SlEnvolopeLetter } from "react-icons/sl";
-import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 
 export default function VerificationEmail(props) {
@@ -12,6 +11,7 @@ export default function VerificationEmail(props) {
       size="s"
       aria-labelledby="contained-modal-title-vcenter"
       centered
+      backdrop="static"
     >
       <Modal.Body>
         <div className="modal_body">
@@ -29,7 +29,7 @@ export default function VerificationEmail(props) {
             </p>
           </div>
           <div className="proceed_btn" onClick={props.onHide}>
-            <button>Done</button>
+            <button>Ok</button>
           </div>
         </div>
       </Modal.Body>

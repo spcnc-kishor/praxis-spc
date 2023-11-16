@@ -7,11 +7,16 @@ import { Col, Container, Row } from "react-bootstrap";
 import ManagePeople from "./screens/Manage-people/ManagePeople";
 import SignIn from "./screens/SignIn/SignIn";
 import OnboardingHome from "./screens/OnboardingHome/OnboardingHome";
+import { Route, Routes } from "react-router-dom";
+import CreatePassword from "./screens/CreatePassword/CreatePassword";
 function App() {
   return (
     <>
-      {/* <SignIn /> */}
-      <OnboardingHome />
+      <Routes>
+        <Route element={<SignIn />} path="/" />
+        <Route element={<OnboardingHome />} path="/onboard" />
+        <Route element={<CreatePassword />} path="/set-password" />
+      </Routes>
 
       {/* <div className="App">
         <Container fluid>

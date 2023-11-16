@@ -2,9 +2,10 @@ import React from "react";
 import "./SignInStyle.css";
 import { BsFillEnvelopeFill } from "react-icons/bs";
 import { BiSolidLock } from "react-icons/bi";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function SignIn() {
+  const navigate = useNavigate();
   return (
     <div className="auth_screen">
       <div className="meta_info">
@@ -64,7 +65,13 @@ export default function SignIn() {
           </Link>
         </div>
         <div className="authBtn">
-          <button>Sign In</button>
+          <button
+            onClick={() => {
+              navigate("/onboard");
+            }}
+          >
+            Sign In
+          </button>
         </div>
         <div className="term_cond">
           <p>

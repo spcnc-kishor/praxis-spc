@@ -14,9 +14,10 @@
 .notification_header::before {
   position: absolute;
   content: "";
-  width: 10%;
+  width: 30%;
+  border-radius: 10px;
   height: 5px;
-  background-color: red;
+  background-color: var(--primary_color);
   bottom: -5px;
 }
 .notification_header h3 {

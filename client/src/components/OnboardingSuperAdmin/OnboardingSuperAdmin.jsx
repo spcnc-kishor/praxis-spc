@@ -2,11 +2,12 @@ import React from "react";
 import "./OnboardingSuperAdminStyle.css";
 import { BsFillInfoCircleFill } from "react-icons/bs";
 import { FaPlus } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import VerificationEmail from "../VerificationEmail/VerificationEmail";
 
 export default function OnboardingSuperAdmin() {
   const [modalShow, setModalShow] = React.useState(false);
+  const navigate = useNavigate();
 
   return (
     <div className="account_setup">
@@ -147,7 +148,13 @@ export default function OnboardingSuperAdmin() {
         <button>Proceed to Email Verification</button>
       </div>
 
-      <VerificationEmail show={modalShow} onHide={() => setModalShow(false)} />
+      <VerificationEmail
+        show={modalShow}
+        onHide={() => {
+          setModalShow(false);
+          navigate("/set-password");
+        }}
+      />
     </div>
   );
 }
